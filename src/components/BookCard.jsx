@@ -4,7 +4,6 @@ import Image from "next/image";
 
 import Link from "next/link";
 const BookCard = ({ book }) => {
-  console.log(book);
   return (
     <Card className="shadow-lg rounded-2xl hover:shadow-2xl transition-all duration-300 overflow-hidden">
       <Image
