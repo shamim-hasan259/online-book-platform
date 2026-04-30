@@ -4,10 +4,8 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination, Autoplay } from "swiper/modules";
-
 import Image from "next/image";
 import Link from "next/link";
-
 import bookImg from "../assets/book-open-pages-close-up-600nw-2562942291.webp";
 import bookImg2 from "../assets/bookimg2.jpg";
 import bookImg3 from "../assets/bookimg3.jpg";

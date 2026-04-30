@@ -7,6 +7,7 @@ import { CiMenuFries } from "react-icons/ci";
 import { AiOutlineClose } from "react-icons/ai";
 import userImg from "../assets/user.png";
 import { usePathname } from "next/navigation";
+import Button from "./Button";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -67,15 +68,11 @@ const Navbar = () => {
               alt="userImg"
               className="rounded-full"
             />
-            <button className="px-4 py-2 bg-linear-to-l from-purple-500 to-purple-800 text-white rounded">
-              Logout
-            </button>
+            <Button text={"Logout"} />
           </>
 
           <Link href="/auth/login">
-            <button className="px-4 py-2 bg-linear-to-l from-purple-500 to-purple-800 text-white rounded">
-              Login
-            </button>
+            <Button text={"Login"} />
           </Link>
         </div>
 
