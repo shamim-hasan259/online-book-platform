@@ -28,7 +28,7 @@ const booksNews = [
 const BookMarquee = () => {
   return (
     <div className="flex items-center gap-4 bg-gray-100 py-4 px-4  mt-10 rounded-lg shadow-sm ">
-      <button className="bg-purple-600 text-white px-4 py-2 rounded-md font-semibold whitespace-nowrap">
+      <button className="bg-linear-to-l from-purple-500 to-purple-800  text-white px-4 py-2 rounded-md font-semibold whitespace-nowrap">
         Latest Books
       </button>
 
