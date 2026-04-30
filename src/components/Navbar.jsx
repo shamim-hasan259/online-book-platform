@@ -55,7 +55,7 @@ const Navbar = () => {
               }`}
               href="/profile"
             >
-              Profile
+              My Profile
             </Link>
           </li>
         </ul>
@@ -117,7 +117,7 @@ const Navbar = () => {
               }`}
               href="/profile"
             >
-              Profile
+              My Profile
             </Link>
           </li>
           <>

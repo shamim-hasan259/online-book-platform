@@ -1,15 +1,18 @@
 "use client";
 import { Card } from "@heroui/react";
 import Image from "next/image";
+
 import Link from "next/link";
 const BookCard = ({ book }) => {
   console.log(book);
   return (
-    <Card className=" shadow-lg rounded-2xl hover:shadow-2xl transition-all duration-300 overflow-hidden">
+    <Card className="shadow-lg rounded-2xl hover:shadow-2xl transition-all duration-300 overflow-hidden">
       <Image
+        width={200}
+        height={200}
         src={book.image}
         alt={book.title}
-        className="w-full h-52 object-cover"
+        className="h-[400px] w-full mx-auto object-cover"
       />
       <div className="p-4 space-y-2">
         <h2 className="text-lg font-bold">{book.title}</h2>
@@ -37,5 +40,4 @@ const BookCard = ({ book }) => {
     </Card>
   );
 };
-
 export default BookCard;
