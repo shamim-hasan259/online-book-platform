@@ -3,90 +3,90 @@
     "id": 1,
     "title": "The Silent Forest",
     "author": "Ava Thompson",
-    "description": "A mysterious journey through an untouched forest filled with secrets.",
+    "description": "A mysterious journey through an untouched forest filled with hidden secrets, strange sounds, and unexpected discoveries that slowly reveal a deeper story behind nature itself.",
     "category": "Story",
     "available_quantity": 5,
-    "image_url": "https://example.com/images/silent_forest.jpg"
+    "image": "https://i.ibb.co.com/s94BY6Dk/images.jpg"
   },
   {
     "id": 2,
     "title": "Lost Memories",
     "author": "John Miller",
-    "description": "A touching story about forgotten pasts and emotional rediscovery.",
+    "description": "A touching emotional story about forgotten memories, past relationships, and the painful yet beautiful journey of rediscovering who you truly are.",
     "category": "Story",
     "available_quantity": 3,
-    "image_url": "https://example.com/images/lost_memories.jpg"
+    "image": "https://i.ibb.co.com/pvT9DtNR/images2.jpg"
   },
   {
     "id": 3,
     "title": "Code Mastery",
     "author": "Sarah Johnson",
-    "description": "Become a professional web developer step by step.",
+    "description": "A complete guide to becoming a professional web developer, covering fundamental to advanced concepts with practical examples and real-world projects.",
     "category": "Tech",
     "available_quantity": 8,
-    "image_url": "https://example.com/images/code_mastery.jpg"
+    "image": "https://i.ibb.co.com/j9ts03Kj/images-3.jpg"
   },
   {
     "id": 4,
     "title": "Modern Web Development",
     "author": "Michael Lee",
-    "description": "Learn modern tools and frameworks for web development.",
+    "description": "A deep dive into modern web development tools, frameworks, and best practices to help you build fast, scalable, and professional web applications.",
     "category": "Tech",
     "available_quantity": 6,
-    "image_url": "https://example.com/images/web_dev.jpg"
+    "image": "https://example.com/images/web_dev.jpg"
   },
   {
     "id": 5,
     "title": "The Quantum World",
     "author": "Dr. Emily Stone",
-    "description": "Introduction to quantum physics and particle behavior.",
+    "description": "An introduction to quantum physics that explains the behavior of particles, waves, and the mysterious principles that govern the universe at the smallest level.",
     "category": "Science",
     "available_quantity": 4,
-    "image_url": "https://example.com/images/quantum.jpg"
+    "image": "https://i.ibb.co.com/tPhmsXTV/images-5.jpg"
   },
   {
     "id": 6,
     "title": "Space Exploration",
     "author": "Albert Newton",
-    "description": "Journey through galaxies and the universe.",
+    "description": "A fascinating journey through space exploring galaxies, stars, planets, and the limitless wonders of the universe beyond our imagination.",
     "category": "Science",
     "available_quantity": 7,
-    "image_url": "https://example.com/images/space.jpg"
+    "image": "https://example.com/images/space.jpg"
   },
   {
     "id": 7,
     "title": "World War History",
     "author": "Henry Adams",
-    "description": "Detailed history of global wars and events.",
+    "description": "A detailed historical account of world wars, major battles, political movements, and their impact on shaping the modern world.",
     "category": "History",
     "available_quantity": 5,
-    "image_url": "https://example.com/images/history.jpg"
+    "image": "https://i.ibb.co.com/LXKt59sC/images-7jpg.jpg"
   },
   {
     "id": 8,
     "title": "Ancient Civilizations",
     "author": "Laura Smith",
-    "description": "Explore Egypt, Rome and ancient human culture.",
+    "description": "An exploration of ancient civilizations like Egypt, Rome, and Mesopotamia, revealing their culture, achievements, and legacy in human history.",
     "category": "History",
     "available_quantity": 6,
-    "image_url": "https://example.com/images/ancient.jpg"
+    "image": "https://i.ibb.co.com/fdJ9kM1F/images-6.jpg"
   },
   {
     "id": 9,
     "title": "Basic Mathematics",
     "author": "Emma White",
-    "description": "Simple math learning for beginners.",
+    "description": "A beginner-friendly guide to mathematics that explains basic concepts, problem-solving techniques, and logical thinking in a simple way.",
     "category": "Education",
     "available_quantity": 10,
-    "image_url": "https://example.com/images/math.jpg"
+    "image": "https://i.ibb.co.com/W4RdYpb8/Basic-Mathematics-1.webp"
   },
   {
     "id": 10,
     "title": "Learn English Grammar",
     "author": "David Brown",
-    "description": "Complete English grammar guide for learners.",
+    "description": "A complete English grammar guide designed for learners, covering rules, examples, and practice to improve reading, writing, and speaking skills.",
     "category": "Education",
     "available_quantity": 9,
-    "image_url": "https://example.com/images/english.jpg"
+    "image": "https://i.ibb.co.com/dJ7yQ5JM/images.png"
   }
 ]
