@@ -26,7 +26,7 @@ const Navbar = () => {
           Book Platform
         </h2>
 
-        <ul className="hidden md:flex items-center gap-6 text-sm">
+        <ul className="hidden md:flex items-center gap-6 text-sm list-none">
           <li>
             <Link
               className={`${
@@ -88,7 +88,7 @@ const Navbar = () => {
       </nav>
 
       {menuOpen && (
-        <div className="md:hidden flex flex-col justify-center items-center gap-4 pb-4 text-sm">
+        <div className="md:hidden flex flex-col justify-center items-center gap-4 pb-4 text-sm list-none">
           <li>
             <Link
               className={`${

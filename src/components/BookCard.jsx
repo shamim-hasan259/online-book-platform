@@ -8,11 +8,11 @@ const BookCard = ({ book }) => {
   return (
     <Card className="shadow-lg rounded-2xl hover:shadow-2xl transition-all duration-300 overflow-hidden">
       <Image
-        width={200}
-        height={200}
+        width={300}
+        height={300}
         src={book.image}
         alt={book.title}
-        className="h-[400px] w-full mx-auto object-cover"
+        className="h-full max-w-full mx-auto object-cover"
       />
       <div className="p-4 space-y-2">
         <h2 className="text-lg font-bold">{book.title}</h2>
@@ -31,8 +31,8 @@ const BookCard = ({ book }) => {
           </span>
         </div>
 
-        <Link href="#">
-          <button className="bg-linear-to-l from-purple-500 to-purple-800 text-white w-full px-4 py-2 rounded">
+        <Link href={`/all-books/${book.id}`}>
+          <button className="bg-linear-to-l from-purple-500 to-purple-800 text-white w-full px-4 py-2 rounded cursor-pointer">
             Show Book Details
           </button>
         </Link>
