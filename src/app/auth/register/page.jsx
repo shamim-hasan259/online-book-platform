@@ -118,7 +118,7 @@ const RegisterPage = () => {
                 Register
               </button>
               <button
-                className="flex items-center text-center w-full px-4 py-2 bg-linear-to-l from-purple-500 to-purple-800 text-white rounded"
+                className="flex items-center justify-center w-full px-4 py-2 bg-linear-to-l from-purple-500 to-purple-800 text-white rounded"
                 onClick={googleLogin}
               >
                 <FaGoogle size={20} className="me-2" />
