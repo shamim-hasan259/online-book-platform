@@ -12,25 +12,19 @@ import Button from "./Button";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const pathname = usePathname();
   const { data } = useSession();
   const user = data?.user;
-
   const handleLogOut = async () => {
-    console.log("log out ");
     await authClient.signOut();
   };
-
-  const pathname = usePathname();
-
   return (
     <div className="border-b px-4 bg-white">
       <nav className="flex justify-between items-center py-4 container mx-auto">
-        {/* Logo */}
         <h2 className="font-extrabold text-2xl bg-linear-to-r from-purple-600 to-purple-800 bg-clip-text text-transparent">
           Book Platform
         </h2>
 
-        {/* Desktop Menu */}
         <ul className="hidden md:flex items-center gap-8 text-sm font-medium">
           <li>
             <Link
@@ -70,7 +64,6 @@ const Navbar = () => {
           </li>
         </ul>
 
-        {/* Desktop Auth */}
         <div className="hidden md:flex items-center gap-4">
           {user ? (
             <div className="flex items-center gap-3">
@@ -81,7 +74,12 @@ const Navbar = () => {
                 alt="user"
                 className="rounded-full object-cover"
               />
-              <Button text="Logout" onClick={handleLogOut} />
+              <button
+                onClick={handleLogOut}
+                className="px-4 py-2 bg-linear-to-l from-purple-500 to-purple-800 text-white rounded"
+              >
+                Logout
+              </button>
             </div>
           ) : (
             <Link href="/auth/login">
@@ -90,7 +88,6 @@ const Navbar = () => {
           )}
         </div>
 
-        {/* Mobile Menu Button */}
         <div className="md:hidden">
           <button onClick={() => setMenuOpen(!menuOpen)} className="text-2xl">
             {menuOpen ? <AiOutlineClose /> : <CiMenuFries />}
@@ -98,7 +95,6 @@ const Navbar = () => {
         </div>
       </nav>
 
-      {/* Mobile Menu */}
       {menuOpen && (
         <div className="md:hidden pb-6 pt-2 bg-white border-t">
           <ul className="flex flex-col items-center gap-5 text-sm font-medium">
@@ -129,7 +125,12 @@ const Navbar = () => {
                   alt="user"
                   className="rounded-full"
                 />
-                <Button text="Logout" handleLogOut={handleLogOut} />
+                <button
+                  onClick={handleLogOut}
+                  className="px-4 py-2 bg-linear-to-l from-purple-500 to-purple-800 text-white rounded"
+                >
+                  Logout
+                </button>
               </div>
             ) : (
               <Link href="/auth/login" onClick={() => setMenuOpen(false)}>

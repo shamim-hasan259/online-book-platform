@@ -5,7 +5,7 @@ import { useState } from "react";
 import { useForm } from "react-hook-form";
 import toast from "react-hot-toast";
 import { BsEyeSlash } from "react-icons/bs";
-import { FaEye } from "react-icons/fa";
+import { FaEye, FaGoogle } from "react-icons/fa";
 
 const LoginPage = () => {
   const {
@@ -14,6 +14,11 @@ const LoginPage = () => {
     formState: { errors },
   } = useForm();
   const [showPassword, setShowPassword] = useState(false);
+  const googleLogin = async () => {
+    await authClient.signIn.social({
+      provider: "google",
+    });
+  };
   const handleLoginFunc = async (userData) => {
     const { email, password } = userData;
     const { data, error } = await authClient.signIn.email({
@@ -33,7 +38,7 @@ const LoginPage = () => {
   return (
     <div className="container mx-auto flex justify-center items-center">
       <div className="bg-slate-100 shadow rounded-lg px-10 py-5 mt-20 ">
-        <h2 className="font-bold text-2xl mb-5 text-center">
+        <h2 className="font-bold text-2xl mb-5 text-center bg-linear-to-l from-purple-500 to-purple-800 bg-clip-text text-transparent line-clamp-1">
           Login Your Account
         </h2>
         <form onSubmit={handleSubmit(handleLoginFunc)}>
@@ -71,9 +76,18 @@ const LoginPage = () => {
               <p className="text-red-500">{errors.password.message}</p>
             )}
           </fieldset>
-          <button className=" w-full px-4 py-2 bg-linear-to-l from-purple-500 to-purple-800 text-white rounded">
-            Login
-          </button>
+          <div className="space-y-3">
+            <button className=" w-full px-4 py-2 bg-linear-to-l from-purple-500 to-purple-800 text-white rounded">
+              Login
+            </button>
+            <button
+              className="w-full px-4 py-2 bg-linear-to-l from-purple-500 to-purple-800 text-white rounded"
+              onClick={googleLogin}
+            >
+              <FaGoogle />
+              Login with google
+            </button>
+          </div>
         </form>
         <p className="text-center mt-5">
           Dont’t Have Any Account ?{" "}
