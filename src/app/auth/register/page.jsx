@@ -118,10 +118,10 @@ const RegisterPage = () => {
                 Register
               </button>
               <button
-                className="flex items-center w-full px-4 py-2 bg-linear-to-l from-purple-500 to-purple-800 text-white rounded"
+                className="flex items-center text-center w-full px-4 py-2 bg-linear-to-l from-purple-500 to-purple-800 text-white rounded"
                 onClick={googleLogin}
               >
-                <FaGoogle size={20} />
+                <FaGoogle size={20} className="me-2" />
                 Login with google
               </button>
             </div>
