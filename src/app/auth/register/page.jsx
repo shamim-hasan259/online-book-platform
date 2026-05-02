@@ -7,7 +7,6 @@ import { useForm } from "react-hook-form";
 import toast from "react-hot-toast";
 import { BsEyeSlash } from "react-icons/bs";
 import { FaEye, FaGoogle } from "react-icons/fa";
-
 const RegisterPage = () => {
   const {
     register,
@@ -32,7 +31,6 @@ const RegisterPage = () => {
       email,
       password,
     });
-
     if (data) {
       signOut();
       toast.success("register successfully");

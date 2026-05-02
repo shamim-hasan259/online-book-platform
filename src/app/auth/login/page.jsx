@@ -6,7 +6,6 @@ import { useForm } from "react-hook-form";
 import toast from "react-hot-toast";
 import { BsEyeSlash } from "react-icons/bs";
 import { FaEye, FaGoogle } from "react-icons/fa";
-
 const LoginPage = () => {
   const {
     register,

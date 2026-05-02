@@ -20,8 +20,10 @@ const AllBooksPage = async ({ searchParams }) => {
     <section>
       <div className="container mx-auto">
         <div className="flex flex-col lg:flex-row justify-between items-center my-8 gap-4">
-          <h2 className="font-bold text-xl lg:text-2xl">Featured Books</h2>
-          <Search />
+          <h2 className="text-3xl font-bold text-center bg-linear-to-l from-purple-500 to-purple-800 bg-clip-text text-transparent line-clamp-1">
+            Featured Books
+          </h2>
+          <Search books={books} />
         </div>
         <div className="grid grid-cols-12 gap-5">
           <div className="col-span-12 lg:col-span-3">

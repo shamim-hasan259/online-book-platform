@@ -2,20 +2,20 @@
 
 import { useState } from "react";
 import { authClient, useSession } from "@/lib/auth-client";
-import Image from "next/image";
-import Link from "next/link";
+// import Image from "next/image";
+
 import { CiMenuFries } from "react-icons/ci";
 import { AiOutlineClose } from "react-icons/ai";
 import userImg from "../assets/user.png";
-import { usePathname } from "next/navigation";
 import Button from "./Button";
 import toast from "react-hot-toast";
 import { useRouter } from "next/navigation";
-
+import Link from "next/link";
+import NavLink from "./NavLink";
 const Navbar = () => {
   const router = useRouter();
   const [menuOpen, setMenuOpen] = useState(false);
-  const pathname = usePathname();
+
   const { data } = useSession();
   const user = data?.user;
   const handleLogOut = async () => {
@@ -31,54 +31,20 @@ const Navbar = () => {
         </h2>
 
         <ul className="hidden md:flex items-center gap-8 text-sm font-medium">
-          <li>
-            <Link
-              href="/"
-              className={`hover:text-purple-600 transition ${
-                pathname === "/"
-                  ? "text-purple-600 border-b-2 border-purple-600 pb-1"
-                  : ""
-              }`}
-            >
-              Home
-            </Link>
-          </li>
-          <li>
-            <Link
-              href="/all-books"
-              className={`hover:text-purple-600 transition ${
-                pathname === "/all-books"
-                  ? "text-purple-600 border-b-2 border-purple-600 pb-1"
-                  : ""
-              }`}
-            >
-              All Books
-            </Link>
-          </li>
-          <li>
-            <Link
-              href="/profile"
-              className={`hover:text-purple-600 transition ${
-                pathname === "/profile"
-                  ? "text-purple-600 border-b-2 border-purple-600 pb-1"
-                  : ""
-              }`}
-            >
-              My Profile
-            </Link>
-          </li>
+          <NavLink />
         </ul>
 
         <div className="hidden md:flex items-center gap-4">
           {user ? (
             <div className="flex items-center gap-3">
-              <Image
+              {/* <Image
                 height={40}
                 width={40}
                 src={user.image || userImg}
                 alt="user"
                 className="rounded-full object-cover"
-              />
+              /> */}
+              <span className="font-bold ">{user?.name}</span>
               <button
                 onClick={handleLogOut}
                 className="px-4 py-2 bg-linear-to-l from-purple-500 to-purple-800 text-white rounded"
@@ -103,33 +69,20 @@ const Navbar = () => {
       {menuOpen && (
         <div className="md:hidden pb-6 pt-2 bg-white border-t">
           <ul className="flex flex-col items-center gap-5 text-sm font-medium">
-            <li>
-              <Link href="/" onClick={() => setMenuOpen(false)}>
-                Home
-              </Link>
-            </li>
-            <li>
-              <Link href="/all-books" onClick={() => setMenuOpen(false)}>
-                All Books
-              </Link>
-            </li>
-            <li>
-              <Link href="/profile" onClick={() => setMenuOpen(false)}>
-                My Profile
-              </Link>
-            </li>
+            <NavLink />
           </ul>
 
           <div className="flex flex-col items-center gap-4 mt-6">
             {user ? (
               <div className="flex flex-col items-center gap-3">
-                <Image
+                {/* <Image
                   height={50}
                   width={50}
                   src={user.image || userImg}
                   alt="user"
                   className="rounded-full"
-                />
+                /> */}
+                <span className="font-bold ">{user?.name}</span>
                 <button
                   onClick={handleLogOut}
                   className="px-4 py-2 bg-linear-to-l from-purple-500 to-purple-800 text-white rounded"

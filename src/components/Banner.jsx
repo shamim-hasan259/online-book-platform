@@ -23,7 +23,7 @@ const Banner = () => {
         >
           <SwiperSlide>
             <div className="flex flex-col-reverse lg:flex-row items-center justify-between gap-10">
-              <div className="text-center lg:text-left text-white space-y-6">
+              <div className="text-center lg:text-left text-white space-y-6 flex-1">
                 <h1 className="text-4xl md:text-5xl font-bold leading-tight">
                   Find Your Next Favorite Book
                 </h1>
@@ -40,8 +40,8 @@ const Banner = () => {
                 </Link>
               </div>
 
-              <div>
-                <Image src={bookImg} alt="Books" className="w-full " priority />
+              <div className="flex-1">
+                <Image src={bookImg} alt="Books" className="w-full" />
               </div>
             </div>
           </SwiperSlide>
@@ -49,7 +49,7 @@ const Banner = () => {
           {/* Slide 2 */}
           <SwiperSlide>
             <div className="flex flex-col-reverse lg:flex-row items-center justify-between gap-10">
-              <div className="text-center lg:text-left text-white space-y-6">
+              <div className="text-center lg:text-left text-white space-y-6 flex-1">
                 <h1 className="text-4xl md:text-5xl font-bold leading-tight">
                   Borrow Books Easily
                 </h1>
@@ -66,7 +66,7 @@ const Banner = () => {
                 </Link>
               </div>
 
-              <div>
+              <div className="flex-1">
                 <Image src={bookImg2} alt="Library" className="w-full" />
               </div>
             </div>
@@ -75,7 +75,7 @@ const Banner = () => {
           {/* Slide 3 */}
           <SwiperSlide>
             <div className="flex flex-col-reverse lg:flex-row items-center justify-between gap-10">
-              <div className="text-center lg:text-left text-white space-y-6">
+              <div className="text-center lg:text-left text-white space-y-6 flex-1">
                 <h1 className="text-4xl md:text-5xl font-bold leading-tight">
                   Discover New Worlds
                 </h1>
@@ -91,7 +91,7 @@ const Banner = () => {
                 </Link>
               </div>
 
-              <div>
+              <div className="flex-1">
                 <Image src={bookImg3} alt="Reading" className="w-full" />
               </div>
             </div>

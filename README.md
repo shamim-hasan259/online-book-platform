@@ -9,12 +9,10 @@ This project is built to digitize the traditional library system and provide a s
 ---
 
 ## 🚀 Live Website
-👉 https://online-book-platform-pi.vercel.app/
-
+👉 https://online-book-platform-pi.vercel.app
 
 
 ## ✨ Key Features
-
 - 🔐 User Authentication (Login & Register)
 - 🔎 Search books by title
 - 📚 Browse all books
