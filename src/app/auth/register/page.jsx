@@ -28,10 +28,9 @@ const RegisterPage = () => {
     const { name, photoUrl, email, password } = userData;
     const { data, error } = await authClient.signUp.email({
       name,
-      photoUrl,
+      image: photoUrl,
       email,
       password,
-      callbackURL: "/",
     });
 
     if (data) {

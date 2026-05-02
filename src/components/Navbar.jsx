@@ -9,14 +9,19 @@ import { AiOutlineClose } from "react-icons/ai";
 import userImg from "../assets/user.png";
 import { usePathname } from "next/navigation";
 import Button from "./Button";
+import toast from "react-hot-toast";
+import { useRouter } from "next/navigation";
 
 const Navbar = () => {
+  const router = useRouter();
   const [menuOpen, setMenuOpen] = useState(false);
   const pathname = usePathname();
   const { data } = useSession();
   const user = data?.user;
   const handleLogOut = async () => {
     await authClient.signOut();
+    toast.success("logout successfully");
+    router.refresh();
   };
   return (
     <div className="border-b px-4 bg-white">
