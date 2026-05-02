@@ -41,8 +41,8 @@ const RegisterPage = () => {
     }
   };
   return (
-    <div>
-      <div className="container mx-auto flex justify-center items-center">
+    <section>
+      <div className="flex flex-col justify-center items-center">
         <div className="bg-slate-100 shadow rounded-lg px-10 py-5 mt-20 ">
           <h2 className="font-bold text-2xl mb-5 text-center bg-linear-to-l from-purple-500 to-purple-800 bg-clip-text text-transparent line-clamp-1">
             Register Now
@@ -131,7 +131,7 @@ const RegisterPage = () => {
           </p>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

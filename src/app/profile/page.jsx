@@ -1,8 +1,10 @@
+import Profile from "@/components/Profile";
+
 const ProfilePage = () => {
   return (
-    <div>
-      <h2>This is profile page</h2>
-    </div>
+    <section className="flex flex-col justify-center items-center">
+      <Profile />
+    </section>
   );
 };
 
