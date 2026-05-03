@@ -1,7 +1,8 @@
 import BookCard from "./BookCard";
 const PopularBooks = async () => {
   const res = await fetch(
-    "https://online-book-platform-pi.vercel.app/book.json"
+    "https://online-book-platform-pi.vercel.app/book.json",
+    { cache: "no-store" }
   );
   const data = await res.json();
   const books = data.slice(0, 4);

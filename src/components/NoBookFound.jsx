@@ -5,7 +5,9 @@ const NoBookFound = () => {
         404
       </h1>
 
-      <h2 className="text-2xl md:text-3xl font-semibold mb-2">No Book Found</h2>
+      <h2 className="text-2xl md:text-3xl font-semibold mb-2">
+        No Books Found
+      </h2>
 
       <p className="text-gray-400 mb-6 text-center max-w-md">
         The page you are looking for might have been removed or the URL is

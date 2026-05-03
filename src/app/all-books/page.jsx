@@ -15,7 +15,8 @@ const AllBooksPage = () => {
   const allBooks = async () => {
     setLoading(true);
     const res = await fetch(
-      "https://online-book-platform-pi.vercel.app/book.json"
+      "https://online-book-platform-pi.vercel.app/book.json",
+      { cache: "no-store" }
     );
     const books = await res.json();
     setBooks(books);
@@ -54,9 +55,6 @@ const AllBooksPage = () => {
     );
     setBooks(filteredBookData);
   };
-  // if (loading) {
-  //   return <Loading />;
-  // }
   return (
     <section>
       <div className="container mx-auto">

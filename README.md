@@ -1,39 +1,124 @@
-# 📚 BookHub - Online Book Borrowing Platform
+# 📚 Online Book Borrowing Platform
 
-## 📖 Project Overview
-BookHub is a modern online book borrowing platform.  
-Users can explore books, search by title, filter by category, and borrow books easily.
+## 🌐 Live URL
 
-This project is built to digitize the traditional library system and provide a smooth user experience.
+https://your-live-link-here.com
 
 ---
 
-## 🚀 Live Website
-👉 https://online-book-platform-pi.vercel.app
+## 📌 Project Purpose
 
+A web application where users can explore books, filter by category, and borrow books online with authentication.
+
+---
 
 ## ✨ Key Features
-- 🔐 User Authentication (Login & Register)
-- 🔎 Search books by title
-- 📚 Browse all books
-- 🗂️ Filter books by category (Story, Tech, Science)
-- 📖 View detailed book information
-- 📥 Borrow books (Private Route)
-- 👤 User Profile page
-- ✏️ Update user information
-- 📱 Fully responsive design (Mobile, Tablet, Desktop)
+
+* User Authentication (Login & Register)
+* Google Login
+* Browse all books
+* Search books by title
+* Filter books by category (Story, Tech, Science)
+* View book details (private route)
+* Borrow books
+* User profile with update option
+* Responsive design (mobile, tablet, desktop)
 
 ---
 
-## 🏗️ Tech Stack
+## 🛠️ Technologies Used
 
-- Next.js  
-- Tailwind CSS  
-- DaisyUI / HeroUI  
-- MongoDB  
-- BetterAuth  
+* Next.js
+* Tailwind CSS
+* DaisyUI / HeroUI
+* BetterAuth
 
 ---
 
-## 📂 Project Structure
+## 📦 NPM Packages Used
 
+* better-auth
+* react-hot-toast
+* axios
+* swiper / animate.css / react-spring
+
+---
+
+## 📊 Data Structure
+
+```json
+{
+  "id": 1,
+  "title": "Book Title",
+  "author": "Author Name",
+  "description": "Book description",
+  "category": "Story",
+  "available_quantity": 5,
+  "image_url": "image link"
+}
+```
+
+---
+# 📚 Online Book Borrowing Platform
+
+## 🌐 Live URL
+
+https://online-book-platform-pi.vercel.app
+
+---
+
+## 📌 Project Purpose
+
+A web application where users can explore books, filter by category, and borrow books online with authentication.
+
+---
+
+## ✨ Key Features
+
+* User Authentication (Login & Register)
+* Google Login
+* Browse all books
+* Search books by title
+* Filter books by category (Story, Tech, Science)
+* View book details (private route)
+* Borrow books
+* User profile with update option
+* Responsive design (mobile, tablet, desktop)
+
+---
+
+## 🛠️ Technologies Used
+
+* Next.js
+* Tailwind CSS
+* DaisyUI / HeroUI
+* BetterAuth
+* json data
+
+---
+
+## 📦 NPM Packages Used
+* better-auth
+* react-hot-toast
+* swiper js
+* tailwindcss
+* react
+* next
+
+---
+
+## 📊 Data Structure
+
+```json
+{
+  "id": 1,
+  "title": "Book Title",
+  "author": "Author Name",
+  "description": "Book description",
+  "category": "Story",
+  "available_quantity": 5,
+  "image_url": "image link"
+}
+```
+
+---

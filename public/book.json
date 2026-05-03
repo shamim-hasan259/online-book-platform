@@ -88,5 +88,24 @@
     "category": "Education",
     "available_quantity": 9,
     "image": "https://i.ibb.co.com/dJ7yQ5JM/images.png"
-  }
+  },
+  {
+  "id": 11,
+  "title": "The Hidden Truth",
+  "author": "Olivia Carter",
+  "description": "A suspenseful story that uncovers secrets buried deep within a small town, where every clue leads to unexpected twists and shocking revelations.",
+  "category": "Story",
+  "available_quantity": 4,
+  "image": "https://i.ibb.co.com/GfLVDL5D/81hhvt-Ytpj-L-AC-UF1000-1000-QL80.jpg"
+},
+{
+  "id": 12,
+  "title": "AI Revolution",
+  "author": "Daniel Wilson",
+  "description": "An insightful look into artificial intelligence, how it is transforming industries, and what the future holds for humans and machines.",
+  "category": "Tech",
+  "available_quantity": 7,
+  "image": "https://i.ibb.co.com/xSPdx63y/images.jpg"
+}
+  
 ]
