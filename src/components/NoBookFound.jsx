@@ -1,7 +1,9 @@
 const NoBookFound = () => {
   return (
     <div className="flex flex-col items-center justify-center px-4 shadow py-2 mt-5">
-      <h1 className="text-7xl font-bold mb-4 animate-bounce">404</h1>
+      <h1 className="text-7xl font-bold mb-4 animate-bounce bg-linear-to-l from-purple-500 to-purple-800 bg-clip-text text-transparent line-clamp-1">
+        404
+      </h1>
 
       <h2 className="text-2xl md:text-3xl font-semibold mb-2">No Book Found</h2>
 
