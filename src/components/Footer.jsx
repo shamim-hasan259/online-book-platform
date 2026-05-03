@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { BsGithub, BsTwitter } from "react-icons/bs";
 import { FaFacebook } from "react-icons/fa";
+import Button from "./Button";
 
 const Footer = () => {
   return (
@@ -94,9 +95,7 @@ const Footer = () => {
             </p>
 
             <Link href="/all-books">
-              <button className="px-4 py-2 bg-linear-to-l from-purple-500 to-purple-800 text-white rounded">
-                Browse Books
-              </button>
+              <Button text={"Browse Book"} />
             </Link>
           </div>
         </div>

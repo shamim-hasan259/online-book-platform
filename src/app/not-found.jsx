@@ -1,7 +1,7 @@
 import Link from "next/link";
 export default function NotFound() {
   return (
-    <div className="h-screen flex flex-col items-center justify-center bg-gradient-to-br from-gray-900 to-gray-800 text-white px-4">
+    <div className="h-screen flex flex-col items-center justify-center bg-linear-to-br from-gray-900 to-gray-800 text-white px-4">
       <h1 className="text-7xl font-bold mb-4 animate-bounce">404</h1>
 
       <h2 className="text-2xl md:text-3xl font-semibold mb-2">
