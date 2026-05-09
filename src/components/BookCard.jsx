@@ -5,20 +5,20 @@ import Image from "next/image";
 import Link from "next/link";
 const BookCard = ({ book }) => {
   return (
-    <Card className="shadow-lg rounded-2xl hover:shadow-2xl transition-all duration-300 overflow-hidden">
+    <Card className="shadow-lg rounded-2xl overflow-hidden">
       <Image
-        width={300}
-        height={300}
+        width={50}
+        height={50}
         src={book.image}
         alt={book.title}
-        className="h-full max-w-full mx-auto object-cover"
+        className="w-full h-[200px] object-cover transition duration-500 hover:scale-105"
       />
       <div className="p-4 space-y-2">
-        <h2 className="text-lg font-bold">{book.title}</h2>
+        <h2 className="text-2xl font-bold">{book.title}</h2>
 
-        <p className="text-sm text-gray-500"> {book.author}</p>
+        <p className="text-lg text-gray-500"> {book.author}</p>
 
-        <p className="text-xs text-gray-600 line-clamp-2">{book.description}</p>
+        <p className="text-sm text-gray-600 line-clamp-2">{book.description}</p>
 
         <div className="flex justify-between items-center">
           <span className="text-xs px-2 py-1 bg-blue-100 text-blue-600 rounded-full">

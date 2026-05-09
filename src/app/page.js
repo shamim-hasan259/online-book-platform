@@ -1,4 +1,5 @@
 import Banner from "@/components/Banner";
+import BookMarquee from "@/components/BookMarquee ";
 import Loading from "@/components/Loading";
 import PopularBooks from "@/components/PopularBooks";
 import Testimonials from "@/components/Testimonials ";
@@ -9,6 +10,7 @@ export default function Home() {
   return (
     <div>
       <Banner />
+      <BookMarquee/>
       <Suspense fallback={<Loading />}>
         <PopularBooks />
       </Suspense>

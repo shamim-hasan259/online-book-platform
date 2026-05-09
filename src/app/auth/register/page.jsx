@@ -114,8 +114,13 @@ const RegisterPage = () => {
               <button className="w-full px-4 py-2 bg-linear-to-l from-purple-500 to-purple-800 text-white rounded">
                 Register
               </button>
+
+              <div className="my-4">
+                <span>OR CONTINUE WITH</span>
+              </div>
+
               <button
-                className="flex items-center justify-center w-full px-4 py-2 bg-linear-to-l from-purple-500 to-purple-800 text-white rounded"
+                className="flex items-center justify-center w-full px-4 py-2 bg-base-200   text-purple-500 rounded"
                 onClick={googleLogin}
               >
                 <FaGoogle size={20} className="me-2" />

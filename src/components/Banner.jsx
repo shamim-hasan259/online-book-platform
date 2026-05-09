@@ -9,8 +9,6 @@ import Link from "next/link";
 import bookImg from "../assets/book-open-pages-close-up-600nw-2562942291.webp";
 import bookImg2 from "../assets/bookimg2.jpg";
 import bookImg3 from "../assets/bookimg3.jpg";
-import BookMarquee from "./BookMarquee ";
-
 const Banner = () => {
   return (
     <section className="bg-linear-to-l from-purple-500 to-purple-800 py-8">
@@ -97,7 +95,7 @@ const Banner = () => {
             </div>
           </SwiperSlide>
         </Swiper>
-        <BookMarquee />
+       
       </div>
     </section>
   );
