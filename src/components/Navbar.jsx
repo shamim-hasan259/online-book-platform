@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { authClient, useSession } from "@/lib/auth-client";
-// import Image from "next/image";
+import Image from "next/image";
 
 import { CiMenuFries } from "react-icons/ci";
 import { AiOutlineClose } from "react-icons/ai";
@@ -26,9 +26,11 @@ const Navbar = () => {
   return (
     <div className="border-b px-4 bg-white">
       <nav className="flex justify-between items-center py-4 container mx-auto">
-        <h2 className="font-extrabold text-2xl bg-linear-to-r from-purple-600 to-purple-800 bg-clip-text text-transparent">
-          Book Platform
-        </h2>
+        <Link href="/">
+          <h2 className="font-extrabold text-2xl bg-linear-to-r from-purple-600 to-purple-800 bg-clip-text text-transparent">
+            Book Platform
+          </h2>
+        </Link>
 
         <ul className="hidden md:flex items-center gap-8 text-sm font-medium">
           <NavLink />
@@ -37,14 +39,13 @@ const Navbar = () => {
         <div className="hidden md:flex items-center gap-4">
           {user ? (
             <div className="flex items-center gap-3">
-              {/* <Image
+              <Image
                 height={40}
                 width={40}
                 src={user.image || userImg}
                 alt="user"
                 className="rounded-full object-cover"
-              /> */}
-              <span className="font-bold ">{user?.name}</span>
+              />
               <button
                 onClick={handleLogOut}
                 className="px-4 py-2 bg-linear-to-l from-purple-500 to-purple-800 text-white rounded"
@@ -75,14 +76,13 @@ const Navbar = () => {
           <div className="flex flex-col items-center gap-4 mt-6">
             {user ? (
               <div className="flex flex-col items-center gap-3">
-                {/* <Image
+                <Image
                   height={50}
                   width={50}
                   src={user.image || userImg}
                   alt="user"
                   className="rounded-full"
-                /> */}
-                <span className="font-bold ">{user?.name}</span>
+                />
                 <button
                   onClick={handleLogOut}
                   className="px-4 py-2 bg-linear-to-l from-purple-500 to-purple-800 text-white rounded"

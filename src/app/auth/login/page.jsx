@@ -6,6 +6,7 @@ import { useForm } from "react-hook-form";
 import toast from "react-hot-toast";
 import { BsEyeSlash } from "react-icons/bs";
 import { FaEye, FaGoogle } from "react-icons/fa";
+import { FcGoogle } from "react-icons/fc";
 const LoginPage = () => {
   const {
     register,
@@ -77,14 +78,18 @@ const LoginPage = () => {
               )}
             </fieldset>
             <div className="space-y-3">
-              <button className=" w-full px-4 py-2 bg-linear-to-l from-purple-500 to-purple-800 text-white rounded">
+              <button className=" w-full px-4 py-2 bg-linear-to-l from-purple-500 to-purple-800 text-white rounded cursor-pointer">
                 Login
               </button>
+              <div className="my-4 text-center">
+                <span className="text-sm">OR CONTINUE WITH</span>
+              </div>
+
               <button
-                className="flex items-center justify-center w-full px-4 py-2 bg-linear-to-l from-purple-500 to-purple-800 text-white rounded"
+                className="flex items-center justify-center w-full px-4 py-2 bg-slate-200 text-purple-700 rounded cursor-pointer hover:bg-slate-300 transition duration-300"
                 onClick={googleLogin}
               >
-                <FaGoogle size={20} className="me-2" />
+                <FcGoogle className="me-2 size-5" />
                 Login with google
               </button>
             </div>

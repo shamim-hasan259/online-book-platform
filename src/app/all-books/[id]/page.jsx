@@ -1,47 +1,67 @@
 import BorrowBook from "@/components/BorrowBook";
+import Button from "@/components/Button";
 import Image from "next/image";
+import Link from "next/link";
 
 const BookDetails = async ({ params }) => {
   const { id } = await params;
+
   const res = await fetch(
     "https://online-book-platform-pi.vercel.app/book.json"
   );
+
   const books = await res.json();
+
   const book = books.find((b) => b.id == id);
+
   return (
-    <section className="max-w-6xl mx-auto px-4 py-10">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-        <div>
+    <section className="max-w-5xl mx-auto px-4 py-8 md:py-12">
+      <div className="mb-6">
+        <Link href="/">
+          <Button text="← Back" />
+        </Link>
+      </div>
+
+      <div className="bg-white rounded-3xl shadow-lg overflow-hidden border border-slate-100">
+        <div className="w-full">
           <Image
-            width={400}
-            height={200}
+            width={1000}
+            height={600}
             src={book.image}
             alt={book.title}
-            className="object-cover h-full max-w-full rounded-2xl shadow-lg mx-auto"
+            className="w-full  md:h-[450px] object-cover"
           />
         </div>
-        <div className="space-y-5">
-          <h1 className="text-3xl md:text-4xl font-bold text-gray-900">
-            {book.title}
-          </h1>
 
-          <p className="text-lg text-gray-600">
-            <span className="font-semibold">{book.author}</span>
+        <div className="p-5 sm:p-8 md:p-10 space-y-5">
+          <div className="space-y-2">
+            <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 leading-tight">
+              {book.title}
+            </h1>
+
+            <p className="text-base sm:text-lg text-gray-600">
+              By{" "}
+              <span className="font-semibold text-gray-800">{book.author}</span>
+            </p>
+          </div>
+
+          <p className="text-gray-700 leading-8 text-sm sm:text-base">
+            {book.description}
           </p>
 
-          <p className="text-gray-700 leading-relaxed">{book.description}</p>
-
-          <div className="flex items-center gap-4 flex-wrap">
-            <span className="px-3 py-1 text-sm bg-blue-100 text-blue-600 rounded-full">
+          <div className="flex flex-wrap items-center gap-3">
+            <span className="px-4 py-1.5 text-sm bg-blue-100 text-blue-700 rounded-full font-medium">
               {book.category}
             </span>
 
-            <span className="px-3 py-1 text-sm bg-green-100 text-green-600 rounded-full">
+            <span className="px-4 py-1.5 text-sm bg-green-100 text-green-700 rounded-full font-medium">
               {book.available_quantity} copies left
             </span>
           </div>
 
-          <BorrowBook />
+          <div className="pt-3">
+            <BorrowBook />
+          </div>
         </div>
       </div>
     </section>
