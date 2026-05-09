@@ -43,11 +43,11 @@ const LoginPage = () => {
             Login Your Account
           </h2>
           <form onSubmit={handleSubmit(handleLoginFunc)}>
-            <fieldset className="fieldset bg-base-200 border-base-300 rounded-box w-xs border p-4">
+            <fieldset className="fieldset bg-base-200 border-base-300 rounded-box w-full border p-4">
               <legend className="fieldset-legend">Email</legend>
               <input
                 type="email"
-                className="input"
+                className="input w-full"
                 placeholder="Enter your email"
                 {...register("email", {
                   required: "Email field is required",
@@ -57,11 +57,11 @@ const LoginPage = () => {
                 <p className="text-red-500">{errors.email.message}</p>
               )}
             </fieldset>
-            <fieldset className="fieldset relative bg-base-200 border-base-300 rounded-box w-xs border p-4">
+            <fieldset className="fieldset relative bg-base-200 border-base-300 rounded-box w-full border p-4">
               <legend className="fieldset-legend">Password</legend>
               <input
                 type={showPassword ? "text" : "password"}
-                className="input"
+                className="input w-full"
                 placeholder="Enter your password"
                 {...register("password", {
                   required: "Password field is required",
